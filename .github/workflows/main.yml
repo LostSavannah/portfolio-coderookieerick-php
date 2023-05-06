@@ -11,4 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
+          rm -r /var/www/php/portfolio-php/*
           cp -r src/* /var/www/php/portfolio-php
